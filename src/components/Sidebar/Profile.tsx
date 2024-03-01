@@ -1,12 +1,15 @@
+import Image from 'next/image'
 import { LogOut } from 'lucide-react'
 
 export function Profile() {
   return (
-    <div className="grid-cols-profile grid items-center gap-3">
-      <img
+    <div className="grid grid-cols-profile items-center gap-3">
+      <Image
         src="https://github.com/andrejr971.png"
         alt="profile"
         className="h-10 w-10 rounded-full"
+        width={40}
+        height={40}
       />
 
       <div className="flex flex-col truncate">
